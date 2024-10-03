@@ -1,0 +1,292 @@
+body {
+  font-size: 16px;
+  line-height: 1.7;
+  font-weight: 400;
+  font-family: "Times New Roman", Times, serif;
+}
+.navbar {
+  height: 65px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  box-shadow: 10px;
+  position: relative;
+  margin-bottom: 25px;
+
+  /* background-color: aqua; */
+}
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: #666;
+  font-weight: 1.2rem;
+}
+.nav-links :hover {
+  color: #387ed1;
+  cursor: pointer;
+}
+
+.landing-container {
+  margin-top: 35px;
+  /* background-color: red; */
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+  align-items: center;
+}
+.landing-container img {
+  width: 700px;
+  height: 300px;
+}
+.landing-container h1 {
+  padding-top: 25px;
+  line-height: 1.25;
+  font-size: 3rem;
+  font-weight: 500;
+  color: #424242;
+  margin-bottom: 5px;
+}
+.landing-container h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 20px;
+  line-height: 1.7;
+  color: #424242;
+  margin-top: 0px;
+  margin-bottom: 45px;
+}
+
+.signup-btn {
+  width: 205px;
+  height: 45px;
+  color: #fff;
+  padding-left: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 30px;
+  /* display: flex;
+  justify-content: center; */
+  background-color: #387ed1;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 1.2rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.signup-btn:hover {
+  background-color: #222;
+  cursor: pointer;
+}
+
+.ecosystem {
+  display: flex;
+  justify-content: space-between;
+}
+.five-rows {
+  padding-left: 65px;
+  align-content: space-between;
+  width: 450px;
+}
+.five-rows h2 {
+  font-size: 2rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #424242;
+}
+
+.five-rows h4 {
+  margin-top: 20px;
+  font-weight: 500;
+  line-height: 1.7;
+  font-size: 1.5rem;
+  color: #424242;
+  margin-bottom: 0px;
+}
+
+.five-rows p {
+  margin-top: 3px;
+  color: #666;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.8;
+}
+.other-apps {
+  color: #387ed1;
+  font-weight: 500;
+}
+.other-apps :hover {
+  color: black;
+  cursor: pointer;
+}
+.eco-img {
+  padding-right: 65px;
+  align-content: space-between;
+}
+.eco-img img {
+  padding-right: 10px;
+}
+
+.eco-img a {
+  text-decoration: none;
+  color: #387ed1;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.8;
+}
+
+.a-tags-ecosystem {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.news :hover {
+  cursor: pointer;
+}
+
+.pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 120px;
+}
+.pricing-content {
+  padding-left: 65px;
+  align-content: space-around;
+  padding-right: 30px;
+}
+.pricing-content h2 {
+  font-size: 2rem;
+  color: #424242;
+  margin-bottom: 20px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.pricing-content p {
+  font-size: 1rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  font-weight: 400;
+  color: #424242;
+}
+.pricing-content a {
+  color: #387ed1;
+  font-weight: 500;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  text-decoration: none;
+}
+
+.pricing-img {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 65px;
+}
+
+.pricing-img img {
+  width: 120px;
+  height: 90px;
+  align-items: center;
+}
+
+.pricing-img p {
+  font-size: 12px;
+  color: #666;
+  line-height: 16px;
+  position: relative;
+  left: -15px;
+  align-items: flex-end;
+  padding-top: 32px;
+  padding-left: 10px;
+}
+
+.varsity {
+  padding-left: 65px;
+  padding-right: 65px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 125px;
+}
+
+.varsity img {
+  width: 435px;
+  height: 320px;
+  padding-right: 30px;
+}
+
+.varsity-content {
+  align-content: space-around;
+  padding-left: 75px;
+  padding-right: 50px;
+}
+
+.varsity-content p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  color: #424242;
+  font-weight: 400;
+}
+
+.varsity-content a {
+  text-decoration: none;
+  font-weight: 550;
+  color: #387ed1;
+  font-size: 20px;
+  line-height: 1.7;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  padding-left: 65px;
+  padding-right: 65px;
+  margin-top: 75px;
+  border-top: 1px solid #eee;
+}
+
+footer a {
+  text-decoration: none;
+  color: rgba(66, 66, 66, 0.8);
+  font-size: 1.2rem;
+  line-height: 1.8;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #387ed1;
+  cursor: pointer;
+}
+
+footer h5 {
+  color: #424242;
+  font-size: 1.5rem;
+  line-height: 1.8;
+  font-weight: 500;
+  margin-bottom: 20px;
+  margin-top: 25px;
+}
+
+.col-one p {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: rgba(66, 66, 66, 0.8);
+  margin-top: 0px;
+  font-weight: 100;
+}
+
+.col-one i {
+  padding-right: 30px;
+  color: rgba(66, 66, 66, 0.8);
+  font-size: 1.25rem;
+}
+
+.col-one i :hover {
+  color: #387ed1;
+  cursor: pointer;
+}
