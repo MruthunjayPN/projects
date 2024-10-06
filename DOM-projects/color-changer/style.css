@@ -1,0 +1,72 @@
+.navbar {
+  margin-top: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.navbar button {
+  height: 70px;
+  width: 170px;
+  border: 1px solid rgb(231, 148, 148);
+  border-radius: 5px;
+  background-color: rgba(231, 148, 148, 0.8);
+  font-size: 25px;
+  font-weight: 700;
+}
+.title {
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.colors {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+#grey {
+  height: 150px;
+  width: 150px;
+  background-color: grey;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin-right: 25px;
+}
+
+#aquamarine {
+  height: 150px;
+  width: 150px;
+  background-color: aquamarine;
+  border: 1px aquamarine;
+  border-radius: 5px;
+  margin-right: 25px;
+}
+
+#yellow {
+  height: 150px;
+  width: 150px;
+  background-color: yellow;
+  border: 1px yellow;
+  border-radius: 5px;
+  margin-right: 25px;
+}
+
+#green {
+  height: 150px;
+  width: 150px;
+  background-color: green;
+  border: 1px green;
+  border-radius: 5px;
+  margin-right: 25px;
+}
+
+.msg {
+  font-size: 50px;
+  font-weight: 500;
+  margin-top: 50px;
+  text-align: center;
+}
