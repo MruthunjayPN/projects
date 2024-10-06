@@ -1,4 +1,6 @@
 const form = document.querySelector("form");
+//cant access h and w here, coz the value will be obtained as soon as the page will be
+//loaded. but e want values after the sumbit
 
 form.addEventListener("submit", function (e) {
   e.preventDefault();
