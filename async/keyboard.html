@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Keyboard</title>
+  </head>
+  <body>
+    <div class="insert">
+      <h3 style="margin-top: 50px; text-align: center">
+        press any key to see the magic
+      </h3>
+    </div>
+
+    <script>
+      const insert = document.querySelector(".insert");
+      window.addEventListener("keydown", (e) => {
+        insert.innerHTML = `
+            <div class='color'> 
+            <table>
+            <tr>
+                <th>Key</th>
+                <th>key code</th>
+                <th>code</th>
+            </tr>
+            <tr>
+                <td>${e.key === " " ? "space" : e.key}</td>
+                <td>${e.keyCode}</td>
+                <td>${e.code}</td>
+            </tr>
+            </table>
+            </div>
+        `;
+      });
+    </script>
+  </body>
+</html>
