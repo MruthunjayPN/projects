@@ -8,9 +8,11 @@ form.addEventListener("submit", function (e) {
   const w = parseInt(document.querySelector("#weight").value);
   const result = document.querySelector("#result");
 
-  if (h === "" || h < 0 || isNaN(h) || w === "" || w < 0 || isNaN(w)) {
+  if (h === "" || h < 0 || isNaN(h) ) {
     result.innerHTML = `Please give a valid height ${h} and weight ${w}`;
-  } else {
+  }
+  if(w === "" || w < 0 || isNaN(w)){}
+   else {
     const bmi = (w / ((h * h) / 10000)).toFixed(2);
     result.innerHTML = `<span>${bmi}</span>`;
   }

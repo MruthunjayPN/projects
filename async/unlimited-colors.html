@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unlimited colors</title>
+  </head>
+  <body
+    style="
+      background-color: #414141;
+      color: white;
+      margin-top: 100px;
+      text-align: center;
+    "
+  >
+    <h1>Click start button to start changing background color.</h1>
+    <h2>Click stop button to stop changing</h2>
+    <button
+      style="
+        margin-top: 100px;
+        width: 100px;
+        border-radius: 5px;
+        height: 30px;
+        border: none;
+        font-size: large;
+      "
+      id="start"
+    >
+      Start
+    </button>
+    <button
+      style="
+        width: 100px;
+        border-radius: 5px;
+        height: 30px;
+        border: none;
+        font-size: large;
+      "
+      id="stop"
+    >
+      Stop
+    </button>
+    <script>
+      const start = document.getElementById("start");
+      const stop = document.getElementById("stop");
+
+      const generateNum = function () {
+        let randomNum = "#";
+        const hex = "0123456789ABCDEF";
+        for (i = 0; i < 6; i++) {
+          const num = Math.floor(Math.random() * 16);
+          randomNum += hex[num];
+        }
+        console.log(randomNum);
+        return randomNum;
+      };
+      let intervalId;
+      const startChangingColor = function () {
+        if (!intervalId) {
+          intervalId = setInterval(changeBg, 1000);
+        }
+        function changeBg() {
+          document.body.style.backgroundColor = generateNum();
+        }
+      };
+
+      function stopChanging() {
+        clearInterval(intervalId);
+        intervalId = null; //flushes the values
+      }
+      stop.addEventListener("click", stopChanging);
+      start.addEventListener("click", startChangingColor);
+    </script>
+  </body>
+</html>
